@@ -1,6 +1,9 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { AdminComponent } from './admin/admin.component';
+import { AddNewProjectComponent } from './add-new-project/add-new-project.component';
+import { DisplayProjectsComponent } from './display-projects/display-projects.component';
+import { ReactiveFormsModule } from '@angular/forms';
 
 
 
@@ -10,13 +13,18 @@ import { AdminComponent } from './admin/admin.component';
   
   
   
-    AdminComponent
+    AdminComponent,
+             AddNewProjectComponent,
+             DisplayProjectsComponent
   ],
   imports: [
-    CommonModule
+    CommonModule,
+    ReactiveFormsModule
   ],
   exports: [
-    AdminComponent
+    AdminComponent,
+    AddNewProjectComponent,
+    DisplayProjectsComponent
   ]
 })
 export class AdminModule { }
