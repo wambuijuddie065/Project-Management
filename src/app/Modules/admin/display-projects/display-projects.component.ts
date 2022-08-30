@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Project } from 'src/app/Interfaces/interfaces';
 
 @Component({
   selector: 'app-display-projects',
@@ -6,6 +7,8 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./display-projects.component.css']
 })
 export class DisplayProjectsComponent implements OnInit {
+
+  projectsArr:Project[]=[]
 
   constructor() { }
 

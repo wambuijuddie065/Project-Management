@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { UserComponent } from './user/user.component';
+import { DisplayAssignedProjectsComponent } from './display-assigned-projects/display-assigned-projects.component';
 
 
 
@@ -8,7 +9,8 @@ import { UserComponent } from './user/user.component';
   declarations: [
   
   
-    UserComponent
+    UserComponent,
+          DisplayAssignedProjectsComponent
   ],
   imports: [
     CommonModule

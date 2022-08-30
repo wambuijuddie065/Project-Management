@@ -1,7 +1,7 @@
 .container{
     color: white;
-    
 }
+
 .aProject{
     display: flex;
     flex-direction: column;
@@ -13,7 +13,7 @@
     gap: 10px;
     border-radius: 20px;
 }
-.deleteBtn{
+.completeBtn{
     height: 50px;
     width: 180px;
     color: white;
@@ -22,6 +22,6 @@
     outline: none;
     border: none;
     border-radius: 30px;
-    background-color: #E11584;
+    background-color:#E11584;
 
 }
