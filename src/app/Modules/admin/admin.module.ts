@@ -4,6 +4,7 @@ import { AdminComponent } from './admin/admin.component';
 import { AddNewProjectComponent } from './add-new-project/add-new-project.component';
 import { DisplayProjectsComponent } from './display-projects/display-projects.component';
 import { ReactiveFormsModule } from '@angular/forms';
+import { AdminRoutingModule } from './admin-routing.module';
 
 
 
@@ -19,7 +20,7 @@ import { ReactiveFormsModule } from '@angular/forms';
   ],
   imports: [
     CommonModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,AdminRoutingModule
   ],
   exports: [
     AdminComponent,
