@@ -30,3 +30,26 @@ export interface User{
     project_id:string;
     issent: string;
 }
+
+export interface LoginInterface{
+    email:string
+    password:string
+    error:string
+    message:string
+    token:string
+
+}
+export interface CheckUserInterface{
+    name:string
+    role:string
+    email:string
+}
+
+export interface SignupInterface{
+    name:string
+    email:string
+    password:string
+    error:string
+    message:string
+    token?:string
+}

@@ -8,15 +8,15 @@
         </div>
         
         <li class="links">
-            <ul><a href="Home">Home</a></ul>
+            <ul><a href="Home" routerLink="home">Home</a></ul>
             <ul><a href="About Us">About Us</a></ul>
             <ul><a href="Services">Services</a></ul>
             <ul><a href="Contact">Contact</a></ul>
         </li>
         <div class="actionsBtns">
-            <button class="loginBtn" routerLink="auth/login">LOGIN</button>
-            <button class="signupBtn" routerLink="auth/signup">SIGN UP</button>
-            <button class="logoutBtn">LOGOUT</button>
+            <button class="loginBtn" routerLink="auth/login" *ngIf="!AuthGuard.isLoggedIn" >LOGIN</button>
+            <button class="signupBtn"  routerLink="auth/signup" *ngIf="!AuthGuard.isLoggedIn">SIGN UP</button>
+            <button class="logoutBtn" (click)="isLoggedOut()" *ngIf="AuthGuard.isLoggedIn" >LOGOUT</button>
         </div>
     </div>
    
